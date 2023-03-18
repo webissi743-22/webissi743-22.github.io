@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,800;0,900;1,400&display=swap');
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color: #212121; 
+}
+
+.dark-theme{
+   --primary-color: #000106;
+   --secondary-color: #fff; 
+}
+
+* {
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: MyWebFont;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+body.dark {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  outline: none;
+}
+
+footer {
+  /*lin fix: using signup codification here*/
+  margin-top: 1rem;
+  bottom: 0;
+}
+  
+hr {
+  width: 100%;
+}
+
+#page-navbar h1{ /* Arregla altura del texto de EasyDates en el index*/
+  padding-top: 9px;
+}

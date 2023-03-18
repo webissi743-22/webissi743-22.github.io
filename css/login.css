@@ -1,0 +1,146 @@
+:root{
+  --primary-color: #d5ddee;
+  --secondary-color: #333131; 
+  --background-clr: #212121;
+  --background-clr2: #edf2fc;
+  --input-clr: #5a4f79;
+}
+
+.dark-theme{
+   --primary-color: #181717;
+   --secondary-color: #fff; 
+   --background-clr: #fff;
+   --background-clr2: #212121;
+   --input-clr: #edf2fc;
+}
+
+body {
+  margin-top: 10rem;
+  flex-direction: column;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: -0.2rem;
+}
+
+span {
+  color: rgb(202, 202, 202);
+  margin-bottom: 2rem;
+}
+
+section {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: var(--secondary-color);
+  max-width: 24rem;
+  height: 25rem;
+  border-radius: 20px;
+}
+
+input {
+  width: 22rem;
+  height: 56px;
+  padding: 0 16px;
+  margin: 8px 0;
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  background: var(--primary-color);
+  color: var(--input-clr);
+  font-size: 16px;
+}
+
+button {
+  font-weight: bold;
+  letter-spacing: 2;
+  width: 20rem;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #fc68a7;
+  border: none;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+
+footer {
+  /*lin fix: using signup codification here*/
+  margin-top: 1rem;
+  bottom: 0;
+  width: 100.6%;
+}
+
+hr {
+  width: 100%;
+}
+
+button:hover {
+  background-color: #da377e;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+/* DarkMode */
+body.dark {
+  background-color: var(--background-clr);
+  color: var(--background-clr2);
+}
+
+body.dark h2 {
+  color: var(--background-clr);
+}
+
+body.dark section {
+  background: var(--background-clr2);
+}
+
+body.dark span {
+  color: var(--background-clr);
+}
+
+/*redirigir a sign up*/
+.redirect {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(13, 206, 190);
+}
+
+.redirect:hover {
+  color: #fc68a7;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  section {
+    max-width: 15rem;
+  }
+
+  input {
+    width: 14rem;
+  }
+
+  button {
+    width: 16rem;
+  }
+
+  .sect {
+    padding-top: 6rem;
+  }
+  
+  .togap {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+}

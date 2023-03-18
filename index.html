@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>EasyDates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/DAILY_DATES_ICONWOW.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/utils/include.js"></script>
+    <script src="js/DarkTheme.js" type="module"></script>
+  </head>
+  <body class="dark">
+    <div id="page-navbar"></div>
+    <!-- Usar commit pasado del github si se necesita el código original de vuelta -->
+    <div id="page-section1"></div>
+    <div id="page-footer"></div>
+    <script>
+      include("elements/navbar.html", "#page-navbar");
+      include("login.html", "#page-login");
+      include("elements/section1.html", "#page-section1");
+      include("elements/footer.html","#page-footer");
+    </script>
+  </body>
+</html>

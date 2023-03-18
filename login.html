@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/DAILY_DATES_ICONWOW.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyDates - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/utils/include.js"></script>
+    <script src="js/DarkTheme.js" type="module"></script>
+  </head>
+  <body class="dark">
+    <div id="page-navbar"></div>
+    <section>
+      <h2>Iniciar Sesión</h2>
+      <span>Introduce tus credenciales</span>
+      <div>
+        <div id="page-login" class="username">
+          <input
+            spellcheck="false"
+            type="text"
+            placeholder="Email"
+            onkeyup="handleChange(event)"
+            onkeydown="handleStartTyping()"
+          />
+        </div>
+        <div id="page-login" class="username">
+          <input
+            spellcheck="false"
+            type="text"
+            placeholder="Contraseña"
+            onkeyup="handleChange(event)"
+            onkeydown="handleStartTyping()"
+          />
+        </div>
+      </div>
+      <button>INICIAR SESIÓN</button>
+    </section>
+    <p>¿No tienes cuenta? <a class="redirect" href=/web/signup.html>Regístrate</a></p>
+    <div id="page-footer"></div>
+    <script>
+      include("elements/navbar.html", "#page-navbar");
+      include("elements/footer.html","#page-footer");
+    </script>
+  </body>
+</html>

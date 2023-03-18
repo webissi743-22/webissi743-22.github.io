@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/DAILY_DATES_ICONWOW.png">
+    <title>EasyDates - Registrarse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="js/utils/include.js"></script>
+    <script src="js/DarkTheme.js" type="module"></script>
+  </head>
+  <body class="dark">
+    <div id="page-navbar"></div>
+    <section>
+      <h2>Registrarse</h2>
+      <span>Introduce tus credenciales</span>
+      <form class="login-form">
+        <input
+          spellcheck="false"
+          class="control"
+          id="name"
+          type="name"
+          placeholder="Nombre"
+          onkeyup="handleChange()"
+        />
+
+        <div class="form-check-inline">
+          <input type="date" id="start" placeholder="Fecha de Nacimiento" name="trip-start" min="1900-01-01" max="2005-12-31">
+        </div>
+        
+        <div class="gender">
+          <input type="radio" name="radio-button" value="Masculino">
+          <label class="form-check-label">Masculino</label>
+          <input class="form-check-input" type="radio" name="radio-button" value="Femenino">
+          <label class="form-check-label">Femenino</label>
+          <input class="form-check-input" type="radio" name="radio-button" value="Otro">
+          <label class="form-check-label">Otro</label>
+        </div>
+      
+        <div class="username">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="email"
+            placeholder="Email"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+
+        <input
+          spellcheck="false"
+          class="control"
+          id="peso"
+          type="peso"
+          placeholder="Peso en kg"
+          onkeyup="handleChange()"
+        />
+
+        <input
+          spellcheck="false"
+          class="control"
+          id="altura"
+          type="altura"
+          placeholder="Altura en cm"
+          onkeyup="handleChange()"
+        />
+
+        <input
+          spellcheck="false"
+          class="control"
+          id="biografia"
+          type="biografia"
+          placeholder="Escribe aquí tu biografía"
+          onkeyup="handleChange()"
+        />
+
+        <input
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Contraseña"
+          onkeyup="handleChange()"
+        />
+
+        <input
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Repetir Contraseña"
+          onkeyup="handleChange()"
+        />
+        
+        <button type="button">UNIRSE</button>
+      </form>
+    </section>  
+    <p class="haveaccount">¿Tienes una cuenta ya? <a class="redirect" href=/web/login.html>Inicia sesión</a></p> 
+    <div id="page-footer"></div>
+    <script>
+      include("elements/navbar.html", "#page-navbar");
+      include("elements/footer.html", "#page-footer");
+    </script>
+  </body>
+</html>

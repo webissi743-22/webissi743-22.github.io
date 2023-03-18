@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,800;0,900;1,400&display=swap');
+
+nav {
+  font-family:'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  background: #e2e2e2;
+  transition: 0.3s;
+  z-index: 999; /*Pepe esta loco xD*/
+}
+
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+  transition: ease 0.2s;
+  font-weight: 600;
+}
+
+a:hover {
+  transition: ease 0.2s;
+  color: #add8e6;
+}
+
+nav.scrolled-down {
+  height: 80px; 
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+}
+
+nav.scrolled-down img {
+  scale: 1.25;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.container {
+  margin: 0 10%;
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* DarkMode */
+nav.dark {
+  background: #fc68a7;
+  color: #ffffff;
+}
+
+nav.dark a {
+  color: black;
+  transition: ease 0.2s;
+}
+
+nav.dark a:hover {
+  transition: ease 0.2s;
+  color: #add8e6;
+}
+
+#icondark{
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+  nav h1 {
+    font-size: 1.4rem;
+  }
+
+  nav .links {
+    gap: 0.4rem;
+  }
+
+  .container {
+    margin: 0 3%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) { /* Arregla separación de elementos de la navbar del index en pantallas grandes */
+  .container {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+  }
+    
+}
+  
